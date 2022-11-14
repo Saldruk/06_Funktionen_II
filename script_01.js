@@ -8,14 +8,38 @@
 4. Ausgabe in Konsole : check!
 */
 
+//module calculator | test
+//agreement : "+","-","*",":"
+// output(caculator("+"));
+// output(caculator("-"));
+// output(caculator("*"));
+// output(caculator(":"));
+// output(caculator("#?!"));
+function caculator(a,b,op) {
+    switch (op) {
+        case "+": //addition
+            return add(a,b);
+        case "-": //subraktion
+            return subtract(a,b);
+        case "*": // multiplikation
+            return muliply(a,b);
+        case ":": // division
+            return divide(a,b);
+        default:
+            return "Da ist was schief gelaufen!"
+    }
+    
+}
+
 //module: division a / b | test
+// output(divide(2,3));
+// output(divide(2,-3));
+// output(divide(2,0));
 function divide(a,b) {
     if (b == 0) {
         return "Error nicht durch 0 teilbar";
-    } else {
-        return a / b;
     }
-   
+        return a / b;   
 }
 
 //module: multiplikation a * b | test
