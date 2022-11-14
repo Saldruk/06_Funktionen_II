@@ -8,13 +8,22 @@
 4. Ausgabe in Konsole : check!
 */
 
+//module: subtraktion a-b | test
+output(subtract(2,3));
+output(subtract(2,-3));
+output(subtract(2,0));
+function subtract(a,b) {
+    return a - b;    
+}
+
+
+
 // module : addition a+b | test
-output(add(2,3));
-output(add(2,-3));
-output(add(2,0));
+// output(add(2,3));
+// output(add(2,-3));
+// output(add(2,0));
 function add(a,b) {
-    let c = a + b;
-    return c;   
+    return a +b;   
 }
 
 
