@@ -8,6 +8,23 @@
 4. Ausgabe in Konsole : check!
 */
 
+//application / APP
+startApp();
+function startApp() {
+    output(caculator(getNumber("1st"),getNumber("2nd"),getOp()));
+}
+
+function getNumber (figure){
+    let inputStr = prompt("Please insert " + figure + " Number: ");
+    let num = parseInt(inputStr);
+    return num;
+}
+
+function getOp() {
+    let op = prompt("Please insert an operator")
+    return op;
+}
+
 //module calculator | test
 //agreement : "+","-","*",":"
 // output(caculator("+"));
@@ -69,6 +86,13 @@ function add(a,b) {
 // module: console ouput | test: 
 // output("hello");
 // output(2);
+// output("hello");
+// output(2);
 function output(outputData) {
-    console.log(outputData);
+   if (typeof outputData == "number"){
+    console.log("the Result is:  " +outputData);
+   } else {
+    console.log("Error: "+outputData);
+
+   } 
  }
