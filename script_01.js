@@ -8,15 +8,31 @@
 4. Ausgabe in Konsole : check!
 */
 
+//module: division a / b | test
+function divide(a,b) {
+    if (b == 0) {
+        return "Error nicht durch 0 teilbar";
+    } else {
+        return a / b;
+    }
+   
+}
+
+//module: multiplikation a * b | test
+// output(muliply(2,3));
+// output(muliply(2,-3));
+// output(muliply(2,0));
+function muliply(a,b) {
+    return a * b;
+}
+
 //module: subtraktion a-b | test
-output(subtract(2,3));
-output(subtract(2,-3));
-output(subtract(2,0));
+// output(subtract(2,3));
+// output(subtract(2,-3));
+// output(subtract(2,0));
 function subtract(a,b) {
     return a - b;    
 }
-
-
 
 // module : addition a+b | test
 // output(add(2,3));
@@ -25,7 +41,6 @@ function subtract(a,b) {
 function add(a,b) {
     return a +b;   
 }
-
 
 // module: console ouput | test: 
 // output("hello");
